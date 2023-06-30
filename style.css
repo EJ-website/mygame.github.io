@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #011627;
+    color: #fff;
+    height: 1700px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background: transparent;
+    transition: all .50s ease;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    margin: 0px 5px;
+    padding: 5px 10px;
+    color: #d6d6d6;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.navlist a:hover {
+   color: #fff; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background: #00c9e0;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all .40s ease;
+}
+
+.btn:hover {
+    border: 2px solid #00c9e0;
+    color: #00c9e0;
+    background: transparent;
+}
+
+#menu-icon {
+    color: #fff;
+    font-size: 38px;
+    font-size: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 0px 10%;
+}
+
+/* hero */
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .text h5{
+    color: #00c9e0;
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0.8rem 0 0.8rem;
+}
+
+.hero p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+
+/* Trend Game Section */
+.trend {
+    padding-top: 5rem;
+}
+
+
+.trend .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trend .text h1 {
+    font-size: 2rem;
+}
+
+.trend .text .btn2 {
+    padding: 10px 25px;
+    background: #242C3B;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.card {
+    margin-top: 4rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.card .card-wrap {
+    width: 252px;
+    height: 358px;
+    background: #242C3B;
+    border-radius: 20px;
+    transition: all .50s ease;
+    cursor: pointer;
+} 
+
+.card .card-wrap .follower {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 8px;
+}
+
+.card .card-wrap .follower h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-wrap:hover {
+    transform: scale(1.090);
+}
+
+
+/* Responsive */
+
+/* Laptop */
+@media (max-width: 1366px) {
+
+    nav {
+        padding: 20px 7%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    section {
+        padding: 0px 5%;
+    }
+
+    nav {
+        padding: 15x 5%;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .navlist a {
+        margin: 0px 5px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+            font-size: 13px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist.open {
+        top: 100%;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #00c9e0;
+        transition: all .50s ease;
+        text-align: left;
+    }
+
+    .navlist a {
+        color: #fff;
+        padding: 1rem;
+        border-left: 2px solid #fff;
+        margin: 1rem;
+        display: block;
+    }
+
+    .navlist a:hover {
+        background: #fff;
+        color: #00c9e0;
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh;
+        padding-top: 4.5rem;
+    }
+
+    .hero img {
+        width: 50%;
+        height: auto;
+    }
+
+    .hero .text h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero .text p {
+        font-size: 0.7rem;
+    }
+
+
+    /* Trend Game */
+    .trend .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .trend .text .btn2 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .card {
+        justify-content: center;
+        gap: 70px;
+        row-gap: 30px;
+    }
+}
+
+
+
+/* Handphone */
+@media (max-width: 570px) {
+
+    .hero {
+        height: 80vh;
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero .text {
+        text-align: center;
+    }
+
+    .hero .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .text h5 {
+        font-size: 1.2rem;
+    }
+
+    .hero .text p {
+        font-size: 0.9rem;
+    }
+
+    .trend .text{
+        padding: 0px 5%;
+    }
+    
+    .trend .text h1 {
+        font-size: 1rem;
+    }
+
+    .trend .text .btn2 {
+        font-size: 0.7rem;
+        padding: 8px 17px;
+    }
+}
